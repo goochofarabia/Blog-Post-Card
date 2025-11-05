@@ -6,7 +6,7 @@ body {
 
 /* Responsive card */
 .blog-post-card {
-  margin: 200px auto;       /* centers horizontally, adds vertical spacing */
+  margin: 250px auto;       /* centers horizontally, adds vertical spacing */
   padding-bottom: 5px;
   background-color: white;
   width: 90%;              /* responsive width for mobile */
@@ -60,6 +60,7 @@ body {
   color: darkred;
   background-color: orange;
 }
+
 
 
 
