@@ -1,58 +1,66 @@
-*{
+body {
   background-color: tan;
+  margin: 0;
+  font-family: sans-serif;
 }
-.blog-post-card {
-  margin:auto;
-  margin-top:200px;
-  padding-bottom:5px;
-  background-color: white;
-  width:300vw;
-  height:300vh;
-  text-align: center;
-  border: solid, grey;
-  border-radius:15px;
 
+/* Responsive card */
+.blog-post-card {
+  margin: 50px auto;       /* centers horizontally, adds vertical spacing */
+  padding-bottom: 5px;
+  background-color: white;
+  width: 90%;              /* responsive width for mobile */
+  max-width: 400px;        /* limits width on desktop */
+  text-align: center;
+  border: 1px solid grey;  /* fixed border syntax */
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* optional: adds subtle shadow */
 }
+
+/* Image scales with card */
 .post-img {
   width: 100%;
-  border-radius:10px 10px 0px 0px;
-  background-color:white;
-  border-bottom: 3px solid dimgray; 
-}
-.post-title {
-  color: dimgray;
-  margin-top:2px;
-  margin-bottom:2px;
-  background-color: white;
-  font-family: sans-serif;
-  font-size: 35px;
-  padding: 5px;
-}
-.post-excerpt {
-  color:dimgray;
-  background-color: white;
-  margin-top: 10px;
-  margin-bottom:25px;
-  font-size:20px;
-}
-.post-content {
-  background-color:white;
-  padding: 10px;
-  border-radius: 20px;
-}
-.read-more {
-  background-color:gold;
-  padding:10px;
-  border-radius:10px;
-  font-family: sans-serif;
-  margin: 5px;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 3px solid dimgray;
   display: block;
 }
-.read-more:hover{
-color:darkred;
-background-color:orange;
-font-family: sans-serif;
+
+/* Title */
+.post-title {
+  color: dimgray;
+  margin: 10px 0;
+  font-size: 1.8rem; /* use rem for scaling on mobile */
+  padding: 5px;
 }
+
+/* Excerpt */
+.post-excerpt {
+  color: dimgray;
+  margin: 10px 0 25px 0;
+  font-size: 1rem;
+  padding: 0 10px;
+}
+
+/* Post content container */
+.post-content {
+  padding: 10px;
+}
+
+/* Read more button */
+.read-more {
+  background-color: gold;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px auto;
+  display: inline-block; /* fits button width to text */
+  cursor: pointer;
+}
+
+.read-more:hover {
+  color: darkred;
+  background-color: orange;
+}
+
 
 
 
