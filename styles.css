@@ -7,6 +7,7 @@
   padding-bottom:5px;
   background-color: white;
   width:300vw;
+  height:300vw;
   text-align: center;
   border: solid, grey;
   border-radius:15px;
@@ -52,5 +53,6 @@ color:darkred;
 background-color:orange;
 font-family: sans-serif;
 }
+
 
 
